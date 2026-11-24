@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.outer{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    transform: translateY(-255px);
+    background-color: red;
+}
+.inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

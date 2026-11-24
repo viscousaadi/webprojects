@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+.play{
+    visibility:visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.battle-main-1{
+    visibility: hidden;
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    transform: translateY(-680px);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.battle-main-1.popup{
+    visibility: visible;
+}
+.battle-main-2{
+    visibility: hidden;
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    transform: translateY(-1720px);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.battle-main-2.popup{
+    visibility: visible;
+}
+.battle-main-3{
+    visibility: hidden;
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    transform: translateY(-2760px);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.battle-main-3.popup{
+    visibility: visible;
+}
+/* battle start here */
+.battle{
+    /* position: relative; */
+    width: 600px;
+    height: 600px;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    border-radius: 20px;
+    /* visibility: visible; */
+    /* transform: translateX(550px) translateY(-600px);  */
+    /* z-index: 100; */
+}
+#btlimg1{
+    width: 100px;
+    position: relative;
+    animation-name: btl1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#btlimg1.popup{
+    animation-play-state: running;
+}
+@keyframes btl1 {
+    0% {
+        transform: translateX(-250px);
+
+    }
+    40% {
+        transform: translateX(0px);
+        width: 100px;
+    }
+    50%{
+        width: 0;
+    }
+    100% {
+        width: 0;
+    }
+}
+#btlimg2{
+    width: 115px;
+    position: relative;
+    animation-name: btl2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#btlimg2.popup{
+    animation-play-state: running;
+}
+@keyframes btl2 {
+    0% {
+        transform: translateX(250px);
+
+    }
+    40% {
+        transform: translateX(0px);
+        width: 115px;
+    }
+    50% {
+        width: 200px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+#you-lost{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    animation-name: youlost;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#you-lost.popup{
+    animation-play-state: running;
+}
+@keyframes youlost {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 1;
+        padding-top: 30px;
+    }
+    100%{
+        opacity: 1;
+        padding-top: 30px;
+    }
+}
+.battle-result{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* Edit this gradient: https://www.css-gradient.com/?colors=ff365b,f23224&from=css */
+    background: #FF365B;
+    background: linear-gradient(315deg, #FF365B 0%, #f23224 100%);
+    /* width: 100px; */
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+/* battle2 */
+#btlimg3{
+    width: 100px;
+    position: relative;
+    animation-name: btl3;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#btlimg3.popup{
+    animation-play-state: running;
+}
+@keyframes btl3 {
+    0% {
+        transform: translateX(-250px);
+
+    }
+    40% {
+        transform: translateX(0px);
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100% {
+        width: 200px;
+    }
+}
+#btlimg4{
+    width: 115px;
+    position: relative;
+    animation-name: btl4;
+    animation-duration: 6s;
+    animation-iteration-count: infinite; 
+    animation-play-state: paused;
+}
+#btlimg4.popup{
+    animation-play-state: running;
+}
+@keyframes btl4 {
+    0% {
+        transform: translateX(250px);
+
+    }
+    40% {
+        transform: translateX(0px);
+        width: 115px;
+    }
+    50% {
+        width: 0px;
+    }
+    100%{
+        width: 0px;
+    }
+}
+#you-won{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    animation-name: youwon;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#you-won.popup{
+    animation-play-state: running;
+}
+@keyframes youwon {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 1;
+        padding-top: 30px;
+    }
+    100%{
+        opacity: 1;
+        padding-top: 30px;
+    }
+}
+
+/* battle ends here */
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+.choice {
+    background: linear-gradient(#16D9E3,#30C7EC,#46AEF7);
+    width: 1200px;
+    height: 400px;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 20px;
+}
+.choice h2{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.images img{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    cursor: pointer;
+}
+.images img:hover{
+    width: 252px;
+    height: 252px;
+}
+.play h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    width: 100%;
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.scoreboard{
+    display: flex;
+}
+.yourscore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.computerscore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 10px;
+}
+#draw{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: draww;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; 
+    animation-play-state: paused;
+}
+#draw.popup{
+    animation-play-state: running;
+}
+@keyframes draww {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    35%{
+        opacity: 1;
+        padding-top: 30px;
+    }
+    100%{
+        opacity: 1;
+        padding-top: 30px;
+    }
+}
